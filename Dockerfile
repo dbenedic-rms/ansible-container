@@ -12,6 +12,6 @@ RUN pip install --upgrade pip \
     && pip install -q ansible msrestazure azure==2.0.0rc5 netaddr ansible-lint \
     && pip install -q kerberos pywinrm
 
-WORKDIR /rms-ansible
+WORKDIR /ansible
 
 CMD ["/bin/bash"]
