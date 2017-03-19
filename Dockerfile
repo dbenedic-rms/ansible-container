@@ -9,7 +9,8 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip install --upgrade pip \
-    && pip install -q ansible msrestazure azure==2.0.0rc5 netaddr ansible-lint kerberos pywinrm
+    && pip install -q ansible msrestazure azure==2.0.0rc5 netaddr ansible-lint \
+    && pip install -q kerberos pywinrm
 
 WORKDIR /rms-ansible
 
