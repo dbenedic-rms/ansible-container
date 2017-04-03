@@ -11,7 +11,7 @@ RUN apt-get update \
 
 RUN pip install --upgrade pip \
     && pip install -q ansible msrestazure azure==2.0.0rc5 netaddr ansible-lint \
-    && pip install -q kerberos pywinrm
+    && pip install -q pywinrm[kerberos]
 
 RUN npm install -g grunt grunt-cli
 

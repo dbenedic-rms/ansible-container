@@ -1,2 +1,1 @@
-# ansible-container
-Dockerfile to build Ansible control machine container
+```docker run -it -v <local-ansible-playbooks>:/ansible:rw -v ~/.ansible:/root/.ansible:ro -v ~/.azure/credentials:/root/.azure/credentials:ro -v ~/.vault-pass:/root/.vault-pass:ro <rms-ansible-container-name-or-id>```
